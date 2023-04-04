@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mypy-pydantic"
+version = "0.1.0"
+description = ""
+authors = ["Matt Gilene <mdgilene@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mypy_pydantic"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.1.1"
+pydantic = "1.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
